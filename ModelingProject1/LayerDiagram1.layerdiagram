@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="a8b0291e-ac15-4ed5-8911-6c3755304aff" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <layers>
+    <layer Id="651df17b-6730-4f87-b968-5663e64cfd07" name="Site">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="8f4527d6-0fbf-452f-869e-f8b695eb93c3" direction="Forward">
+          <layerMoniker Id="78e2d805-d162-486d-b207-14db030bfd2a" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="0b1e9281-1b72-4e19-9822-b235dc92abf4" direction="Forward">
+          <layerMoniker Id="8f1b416a-3e45-4110-a909-2038f6768126" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <references>
+        <reference Id="f10d1df2-8a9c-483b-85c3-9b898201d173" name="Site">
+          <ArtifactNode Label="Site" Category="CodeSchema_Project" Id="(Assembly=&quot;$(PersonalUri)/Visual Studio 2013/Projects/BasicAutoFac/Site/Site.csproj&quot;)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=Site)" Label="Site.dll" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.dll" />
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="33fe5f83-c2a7-4cbe-9fd5-d126f6930386" name="Services">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="e006f679-3bb5-4054-9b82-ca684c798d54" direction="Forward">
+          <layerMoniker Id="78e2d805-d162-486d-b207-14db030bfd2a" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="694cabb1-98ba-4f69-8d8a-4765257bc7e1" direction="Forward">
+          <layerMoniker Id="26f27c96-3471-4447-afde-58900e1b7dea" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="f16c16df-0289-47e3-960c-952ab1c47b0a" direction="Forward">
+          <layerMoniker Id="8f1b416a-3e45-4110-a909-2038f6768126" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <references>
+        <reference Id="efe9e858-d6c4-483f-ab5e-38e5b9e4e70a" name="Services">
+          <ArtifactNode Label="Services" Category="CodeSchema_Project" Id="(Assembly=&quot;$(PersonalUri)/Visual Studio 2013/Projects/BasicAutoFac/Services/Services.csproj&quot;)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=Services)" Label="Services.dll" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.dll" />
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="60491c11-683d-432f-8a26-f2913142eb52" name="Repos">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="652caaa5-3954-4dc9-9c18-deeac5732655" direction="Forward">
+          <layerMoniker Id="78e2d805-d162-486d-b207-14db030bfd2a" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="68ffe649-8098-432d-87c0-677012583f6b" direction="Forward">
+          <layerMoniker Id="26f27c96-3471-4447-afde-58900e1b7dea" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <references>
+        <reference Id="4201b98a-997c-43b5-a65c-d9ebe9e26a57" name="Repositories">
+          <ArtifactNode Label="Repositories" Category="CodeSchema_Project" Id="(Assembly=&quot;$(PersonalUri)/Visual Studio 2013/Projects/BasicAutoFac/Repositories/Repositories.csproj&quot;)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=Repositories)" Label="Repositories.dll" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.dll" />
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="78e2d805-d162-486d-b207-14db030bfd2a" name="Contracts">
+      <references>
+        <reference Id="5818eeee-04ce-48f8-ad9c-73f5fff40815" name="Contracts">
+          <ArtifactNode Label="Contracts" Category="CodeSchema_Project" Id="(Assembly=&quot;$(PersonalUri)/Visual Studio 2013/Projects/BasicAutoFac/Contracts/Contracts.csproj&quot;)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=Contracts)" Label="Contracts.dll" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.dll" />
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="8f1b416a-3e45-4110-a909-2038f6768126" name="DTOs">
+      <references>
+        <reference Id="6fab0f5d-0c01-49e0-a0c4-6101febff3e6" name="DTOs">
+          <ArtifactNode Label="DTOs" Category="CodeSchema_Project" Id="(Assembly=&quot;$(PersonalUri)/Visual Studio 2013/Projects/BasicAutoFac/DTOs/DTOs.csproj&quot;)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=DTOs)" Label="DTOs.dll" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.dll" />
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="26f27c96-3471-4447-afde-58900e1b7dea" name="Entities">
+      <references>
+        <reference Id="563f386b-c295-4ff0-a6fa-0e805ccb0fd9" name="Entities">
+          <ArtifactNode Label="Entities" Category="CodeSchema_Project" Id="(Assembly=&quot;$(PersonalUri)/Visual Studio 2013/Projects/BasicAutoFac/Entities/Entities.csproj&quot;)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=Entities)" Label="Entities.dll" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.dll" />
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+  </layers>
+</layerModel>

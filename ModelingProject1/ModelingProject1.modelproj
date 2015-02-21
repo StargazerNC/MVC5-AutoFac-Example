@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{af087b9b-77f5-4445-ace0-16cc770343b2}</ProjectGuid>
+    <ArchitectureToolsVersion>2.0.0.0</ArchitectureToolsVersion>
+    <Name>ModelingProject1</Name>
+    <RootNamespace>ModelingProject1</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
+  <ItemGroup>
+    <Folder Include="ModelDefinition\" />
+    <Content Include="ModelDefinition\ModelingProject1.uml">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Validate Include="LayerDiagram1.layerdiagram">
+      <SubType>Content</SubType>
+    </Validate>
+    <Validate Include="LayerDiagram1.layerdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>LayerDiagram1.layerdiagram</DependentUpon>
+    </Validate>
+    <Validate Include="LayerDiagram1.layerdiagram.suppressions">
+      <SubType>Content</SubType>
+      <DependentUpon>LayerDiagram1.layerdiagram</DependentUpon>
+    </Validate>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Contracts\Contracts.csproj">
+      <Name>Contracts</Name>
+      <Project>{ffefbbf1-4d39-4920-a43b-5b3338d514cb}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\DTOs\DTOs.csproj">
+      <Name>DTOs</Name>
+      <Project>{149859e7-4162-4c59-934b-e323c0cd658d}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Entities\Entities.csproj">
+      <Name>Entities</Name>
+      <Project>{c7857678-d16b-42bf-a8be-2180f9250e3b}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Repositories\Repositories.csproj">
+      <Name>Repositories</Name>
+      <Project>{10c484f2-1896-4474-8901-00de435b93ee}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Services\Services.csproj">
+      <Name>Services</Name>
+      <Project>{45b5c03c-df90-42a3-8be5-dd28452803ff}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Site\Site.csproj">
+      <Name>Site</Name>
+      <Project>{95209238-50a5-4780-9a31-f7a054aa779d}</Project>
+    </ProjectReference>
+  </ItemGroup>
+</Project>
